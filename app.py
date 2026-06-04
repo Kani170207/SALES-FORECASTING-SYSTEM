@@ -29,7 +29,7 @@ layout="wide"
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/walmart_cleaned.csv")
+    df = pd.read_csv("data/walmart_sample.csv")
     df["Date"] = pd.to_datetime(df["Date"])
     return df
 
